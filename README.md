@@ -92,4 +92,14 @@ huérfano. Demostrar el resultado con el PPID del proceso hijo.
 - ***Todos los hijos han terminado***
 - ***Fin del proceso padre con PID: 11437***
 
+### 3.1.5 Crear còdigo para verificar la creaciòn de un proceso zombie, puede usar como base el còdigo de la Figura 5.
+#### Resultados dados con el còdigo modificado
+
+- ***Padre: PID=13969, hijo creado PID=13970**
+- ***Padre duerme 30 segundos...***
+- ***Hijo: PID=13970, PPID=13969 -> saliendo ahora***
+
+Para verificar que el proceso realmente haya quedado zombie se ejecuta el siguiente comando
+***ps aux | grep Z***
+
 
