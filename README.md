@@ -75,21 +75,21 @@ huérfano. Demostrar el resultado con el PPID del proceso hijo.
 * a) Modificar el còdigo de la Figura 4 ara que cada proceso hijo haga una tarea diferente
 
 #### REsultados dados con el còdigo modificado 
-***---> INICIO DEL PROCESO PADRE <---***
- ***PID del padre: 11437***
- ***Padre crea el hijo 1 con PID: 11438*** 
- ***Ejecutando el hijo 1:***
- ***Contando números pares del 1 al 20:***
- ***2	 4	 6	 8	 10	 12	 14	 16	 18	 20***
- ***Padre crea el hijo 2 con PID: 11439***
- ***Ejecutando el hijo 2:***
- ***Contando números impares del 1 al 20:***
- ***1	 3	 5	 7	 9	 11	 13	 15	 17	 19***
- ***Padre crea el hijo 3 con PID: 11440*** 
- ***Ejecutando el hijo 3:***
- ***Contando números del 1 al 10:***
- ***1	 2	 3	 4	 5	 6	 7	 8	 9	 10***	
- ***Todos los hijos han terminado***
- ***Fin del proceso padre con PID: 11437***
+- ***---> INICIO DEL PROCESO PADRE <---***
+- ***PID del padre: 11437***
+- ***Padre crea el hijo 1 con PID: 11438*** 
+- ***Ejecutando el hijo 1:***
+- ***Contando números pares del 1 al 20:***
+- ***2	 4	 6	 8	 10	 12	 14	 16	 18	 20***
+- ***Padre crea el hijo 2 con PID: 11439***
+- ***Ejecutando el hijo 2:***
+- ***Contando números impares del 1 al 20:***
+- ***1	 3	 5	 7	 9	 11	 13	 15	 17	 19***
+- ***Padre crea el hijo 3 con PID: 11440*** 
+- ***Ejecutando el hijo 3:***
+- ***Contando números del 1 al 10:***
+- ***1	 2	 3	 4	 5	 6	 7	 8	 9	 10***	
+- ***Todos los hijos han terminado***
+- ***Fin del proceso padre con PID: 11437***
 
 
