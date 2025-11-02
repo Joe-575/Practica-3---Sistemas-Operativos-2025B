@@ -17,6 +17,9 @@ Ing. Diana Martínez, PhD.
 * 1.2. Realizar varias actividades de creación de procesos padres e hijos.
 
 ## Resolución
+- La práctica se lleva a cabo en una máquina virtual por medio del programa Oracle VirtualBox, en el sistema operativo Ubuntu Server. 
+
+
 ## Uso de Fork
 ### 3.1.1 Identificar los valores PID y PPID de cada proceso
 Resultados
@@ -73,9 +76,9 @@ huérfano. Demostrar el resultado con el PPID del proceso hijo.
 
 
 ### 3.1.4 Creación de un proceso padre y de tres procesos hijos. 
-* a) Modificar el còdigo de la Figura 4 ara que cada proceso hijo haga una tarea diferente
+* a) Modificar el código de la Figura 4 para que cada proceso hijo haga una tarea diferente
 
-#### REsultados dados con el còdigo modificado 
+#### REsultados dados con el código modificado 
 - ***---> INICIO DEL PROCESO PADRE <---***
 - ***PID del padre: 11437***
 - ***Padre crea el hijo 1 con PID: 11438*** 
@@ -93,8 +96,8 @@ huérfano. Demostrar el resultado con el PPID del proceso hijo.
 - ***Todos los hijos han terminado***
 - ***Fin del proceso padre con PID: 11437***
 
-### 3.1.5 Crear còdigo para verificar la creaciòn de un proceso zombie, puede usar como base el còdigo de la Figura 5.
-#### Resultados dados con el còdigo modificado
+### 3.1.5 Crear código para verificar la creación de un proceso zombie, puede usar como base el código de la Figura 5.
+#### Resultados dados con el código modificado
 
 - ***Padre: PID=13969, hijo creado PID=13970**
 - ***Padre duerme 30 segundos...***
@@ -104,8 +107,8 @@ Para verificar que el proceso realmente haya quedado zombie se ejecuta el siguie
 ***ps aux | grep Z***
 
 ## Uso de EXEC
-### 3.2.1 Crear un proceso hijo que realice una tarea usando exce
-#### Resultados dados con el còdigo modificado
+### 3.2.1 Crear un proceso hijo que realice una tarea usando exec
+#### Resultados dados con el cóigo modificado
 - ****total 24***
 - ***-rwxrwxr-x 1 joel joel 19456 nov  2 13:21 procesos***
 - ***-rw-rw-r-- 1 joel joel  1376 nov  2 13:05 procesos.c***
@@ -114,8 +117,8 @@ Para verificar que el proceso realmente haya quedado zombie se ejecuta el siguie
 
 ## Uso de SYSTEM
 ### 3.2.1 Crear un proceso hijo que liste los procesos del sistema usando system
-#### Resultados dados con el còdigo modificado
- Se muestran todos los procesos y dado que son demasiados procesos se mostraràn unos cuantos
+#### Resultados dados con el código modificado
+ Se muestran todos los procesos y dado que son demasiados procesos se mostrarán unos cuantos
 - Proceso hijo: Listando los procesos del sistema...
 - USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 - joel        3976  0.0  0.0  21072  1316 ?        Sl   08:52   0:00 /snap/firefox/7084/usr/lib/firefox/cr
@@ -125,3 +128,7 @@ Para verificar que el proceso realmente haya quedado zombie se ejecuta el siguie
 - joel        4094  0.0  0.7 452088 29520 ?        Sl   08:52   0:00 /snap/firefox/7084/usr/lib/firefox/fi
 - joel        4131  0.0  0.1 1765940 7220 ?        Sl   08:52   0:02 /snap/snapd/current/usr/bin/snap user
 - Proceso padre: El proceso hijo ha terminado
+
+## Conclusiones
+- Mediante la práctica realizada se pudo visualizar los diferentes procesos desde la terminal por medio del comando ***top***. La creación de procesos, donde cada padre puede tener varios hijos y cabe la posibilidad de que algunos de ellos quede huérfano o zombi.
+- La implementación del lenguaje C, fundamental para realizar dicha práctica junto con uso del editor de texto ***VIM***. También se ha aprendido a subir los archivos a GitHub por medio de la terminal de Ubuntu.
