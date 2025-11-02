@@ -17,7 +17,8 @@ Ing. Diana Martínez, PhD.
 * 1.2. Realizar varias actividades de creación de procesos padres e hijos.
 
 ## Resolución
-### 3.1 Uso de Fork
+## Uso de Fork
+### 3.1.1 Identificar los valores PID y PPID de cada proceso
 Resultados
 * Inicio del proceso padre PID = 2993
 * Inicio del proceso hijo PID = 2993, PPID = 2959
@@ -102,4 +103,25 @@ huérfano. Demostrar el resultado con el PPID del proceso hijo.
 Para verificar que el proceso realmente haya quedado zombie se ejecuta el siguiente comando
 ***ps aux | grep Z***
 
+## Uso de EXEC
+### 3.2.1 Crear un proceso hijo que realice una tarea usando exce
+#### Resultados dados con el còdigo modificado
+- ****total 24***
+- ***-rwxrwxr-x 1 joel joel 19456 nov  2 13:21 procesos***
+- ***-rw-rw-r-- 1 joel joel  1376 nov  2 13:05 procesos.c***
+- ***El proceso hijo con PID 16750 se ha ejecutado***
 
+
+## Uso de SYSTEM
+### 3.2.1 Crear un proceso hijo que liste los procesos del sistema usando system
+#### Resultados dados con el còdigo modificado
+ Se muestran todos los procesos y dado que son demasiados procesos se mostraràn unos cuantos
+- Proceso hijo: Listando los procesos del sistema...
+- USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+- joel        3976  0.0  0.0  21072  1316 ?        Sl   08:52   0:00 /snap/firefox/7084/usr/lib/firefox/cr
+- joel        4050  0.0  0.4 300092 16512 ?        S    08:52   0:00 /snap/firefox/7084/usr/lib/firefox/fi
+- joel        4056  0.0  0.6 314488 24084 ?        Sl   08:52   0:00 /snap/firefox/7084/usr/lib/firefox/fi
+- joel        4085  0.1  2.7 2556740 110944 ?      Sl   08:52   0:23 /snap/firefox/7084/usr/lib/firefox/fi
+- joel        4094  0.0  0.7 452088 29520 ?        Sl   08:52   0:00 /snap/firefox/7084/usr/lib/firefox/fi
+- joel        4131  0.0  0.1 1765940 7220 ?        Sl   08:52   0:02 /snap/snapd/current/usr/bin/snap user
+- Proceso padre: El proceso hijo ha terminado
